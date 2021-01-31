@@ -1,0 +1,30 @@
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.page-container {
+  margin-top: 20px;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+h5 {
+  color: orangered;
+}
+
+.card-body {
+  width: -webkit-fill-available;
+  text-align: center;
+}
+/*
+span.fa-stack > fa-2x {
+  text-align: center;
+  width: -webkit-fill-available;
+}
+*/
+
+.ikondoboz:hover {
+  box-shadow: none;
+}
