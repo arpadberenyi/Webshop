@@ -25,6 +25,21 @@ span.fa-stack > fa-2x {
 }
 */
 
+/*
+.ikondoboz {
+  border: none;
+}
+*/
+
 .ikondoboz:hover {
   box-shadow: none;
+}
+
+.card-body {
+  border: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }

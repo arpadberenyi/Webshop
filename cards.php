@@ -1,13 +1,15 @@
 <?php
 require_once 'db_connect.php';
+
 if(isset($_GET['start'])){
     $start = $_GET['start'];
 }else{
-    $start = 0;
+      $start = 0;
 }
+
 // ha jó a lekérdezés akkor 1-est ad vissza ami azt jelenti, hogy beléphetünk ebbe az if-be
 // különben 0-át ad vissza és else ágban tudjuk kezelni a hibát
-$darab = 6;
+$darab = 6; 
 if ($result = $db->query("SELECT * FROM products LIMIT ".$start.",".$darab)){
 //Objektum
 if  ($result->num_rows){ // ha a num_rows nullától különböző akkor lépünk be ide
@@ -25,5 +27,5 @@ if  ($result->num_rows){ // ha a num_rows nullától különböző akkor lépün
 }
 
 $db ->close();
-echo json_encode($products);
+  echo json_encode($products);
 ?>
